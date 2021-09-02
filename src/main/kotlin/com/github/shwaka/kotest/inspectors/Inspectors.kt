@@ -1,5 +1,8 @@
 package com.github.shwaka.kotest.inspectors
 
+import io.kotest.inspectors.ElementPass
+import io.kotest.inspectors.runTests
+
 fun <T> Sequence<T>.forAll(fn: (T) -> Unit) = toList().forAll(fn)
 fun <T> Array<T>.forAll(fn: (T) -> Unit) = asList().forAll(fn)
 fun <T> Collection<T>.forAll(fn: (T) -> Unit) {

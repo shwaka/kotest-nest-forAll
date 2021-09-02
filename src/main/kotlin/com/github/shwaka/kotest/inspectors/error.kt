@@ -4,6 +4,9 @@ import io.kotest.assertions.AssertionsConfig
 import io.kotest.assertions.exceptionToMessage
 import io.kotest.assertions.failure
 import io.kotest.assertions.show.show
+import io.kotest.inspectors.ElementFail
+import io.kotest.inspectors.ElementPass
+import io.kotest.inspectors.ElementResult
 
 /**
  * Build assertion error message.
